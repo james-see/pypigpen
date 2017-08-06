@@ -36,5 +36,5 @@ with open('./cipher.txt',"w") as f:
             continue
         letter = letter.lower()
         print(jsondict[letter], end="")
-        f.write(jsondict[letter])
+        f.write(jsondict[letter]+' ')
 exit('\nthanks for playing')

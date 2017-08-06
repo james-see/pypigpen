@@ -31,17 +31,19 @@ if len(sys.argv) < 2:
     print('usage: python3 decipher.py [full path and name of text file to decipher]\n')
     exit()
 
-with open(sys.argv[1],"r") as f:
-    listofcipherwords = f.read().split()
-    print(listofcipherwords[0])
-    exit('working so far')
-    for word in helloworld:
-        # print("\n{}".format(letter))
-        if letter == '.':
-            print('\n')
-            f.write('\n')
-            continue
-        letter = letter.lower()
-        print(jsondict[letter]+" ", end="")
-        f.write(jsondict[letter])
+with open('decipher.txt','w') as d:
+    with open(sys.argv[1],"r") as f:
+        listofcipherletters = f.read().split()
+        print(listofcipherletters)
+        #exit('working so far')
+        for letter in listofcipherletters:
+            # print("\n{}".format(letter))
+            if letter == '\n':
+                print('\n')
+                d.write('\n')
+                continue
+            name = [alphabet for alphabet, cipher in jsondict.items() if cipher == letter]
+            print(''.join(name),end="")
+            writeable = str(''.join(name))
+            d.write(writeable)
 exit('\nthanks for playing')
