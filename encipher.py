@@ -27,6 +27,13 @@ print(pypigpen)
 print('Welcome. \nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n')
 helloworld = input("What do you want to encipher? (use . for new line):\n")
 
+# get ready for output
+# clear
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+# start output here
+print('Output:\n')
+
 with open('./cipher.txt',"w") as f:
     for letter in helloworld:
         # print("\n{}".format(letter))
