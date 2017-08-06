@@ -34,7 +34,8 @@ if len(sys.argv) < 2:
 with open('decipher.txt','w') as d:
     with open(sys.argv[1],"r") as f:
         listofcipherletters = f.read().split()
-        print(listofcipherletters)
+        # tests
+        # print(listofcipherletters)
         #exit('working so far')
         for letter in listofcipherletters:
             # print("\n{}".format(letter))
@@ -46,4 +47,4 @@ with open('decipher.txt','w') as d:
             print(''.join(name),end="")
             writeable = str(''.join(name))
             d.write(writeable)
-exit('\nthanks for playing')
+exit('\nthanks for playing\nsaved as decipher.txt')

@@ -10,7 +10,7 @@ with open('jsondata.json') as f:
 # //// tests
 
 # print(jsondict['a'])
-pypigpen = """
+pypigpen = """-----------------------------
                       ,.
                      (_|,.
                     ,' /, )_______   _
@@ -22,6 +22,7 @@ pypigpen = """
                      /_]'|_| /_)_/
                         /_]'  /_]'
                       
+-----------------------------
 """
 print(pypigpen)
 print('Welcome. \nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n')
@@ -44,4 +45,4 @@ with open('./cipher.txt',"w") as f:
         letter = letter.lower()
         print(jsondict[letter], end="")
         f.write(jsondict[letter]+' ')
-exit('\nthanks for playing')
+exit('\nthanks for playing\nsaved as cipher.txt\n')
