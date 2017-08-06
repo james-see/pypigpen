@@ -1,3 +1,17 @@
+```
+                      ,.
+                     (_|,.
+                    ,' /, )_______   _
+                 __j o``-'        `.'-)'
+                (")                 \'
+                 `-j                |
+                   `-._(           /
+                      |_\  |--^.  /
+                     /_]'|_| /_)_/
+                        /_]'  /_]'
+                      
+```
+
 # pypigpen
 Pigpen cipher encipher and decipher in python 3.
 
@@ -20,3 +34,4 @@ Output:
    _|[.]]   |-   |__|[.][.][.>   |._|-[]
    
 ```
+Thanks to http://ascii.co.uk/art/pig hjw for the pig ascii art.
