@@ -10,8 +10,22 @@ with open('jsondata.json') as f:
 # //// tests
 
 # print(jsondict['a'])
-print('Welcome. \nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.')
-helloworld = input("What do you want to encipher? (use . for new line): ")
+pypigpen = """
+                      ,.
+                     (_|,.
+                    ,' /, )_______   _
+                 __j o``-'        `.'-)'
+                (")                 \\'
+                 `-j                |
+                   `-._(           /
+                      |_\  |--^.  /
+                     /_]'|_| /_)_/
+                        /_]'  /_]'
+                      
+"""
+print(pypigpen)
+print('Welcome. \nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n')
+helloworld = input("What do you want to encipher? (use . for new line):\n")
 
 with open('./cipher.txt',"w") as f:
     for letter in helloworld:
