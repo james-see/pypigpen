@@ -12,6 +12,13 @@
                       
 ```
 
+This script uses the pigpen plaintext font dictionary available here as a convenient json file:
+https://gist.github.com/jamesacampbell/f3612d454268f105faf34aef56499bb2 
+
+for instance ```"a" = "_|" and "b" = "|_|".```
+
+and also available included in this repo as jsondata.json
+
 # pypigpen
 Pigpen cipher encipher and decipher in python 3.
 
