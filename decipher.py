@@ -36,7 +36,7 @@ if len(sys.argv) < 2:
 
 jsondict = get_file('jsondata.json')
 
-with open('decipher.txt','w') as d:
+with open(sys.argv[1],'w') as d:
     with open(sys.argv[1],"r") as f:
         listofcipherletters = f.read().split()
         # tests
