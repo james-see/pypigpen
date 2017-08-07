@@ -3,6 +3,7 @@
 # Requirements: Python 3.x and above
 
 import json
+from colorama import Fore, Back, Style
 
 with open('jsondata.json') as f:
     jsondict = json.loads(f.read())
@@ -10,22 +11,26 @@ with open('jsondata.json') as f:
 # //// tests
 
 # print(jsondict['a'])
-pypigpen = """-----------------------------
-                      ,.
-                     (_|,.
-                    ,' /, )_______   _
-                 __j o``-'        `.'-)'
-                (")                 \\'
-                 `-j                |
-                   `-._(           /
-                      |_\  |--^.  /
-                     /_]'|_| /_)_/
-                        /_]'  /_]'
+pypigpen = """
+------------------------------------
+PYPIGPEN
+------------------------------------
+                  ,.
+                 (_|,.
+                ,' /, )_______   _
+             __j o``-'        `.'-)'
+            (")                 \\'
+             `-j                |
+               `-._(           /
+                  |_\  |--^.  /
+                 /_]'|_| /_)_/
+                    /_]'  /_]'
                       
------------------------------
+------------------------------------
 """
 print(pypigpen)
-print('Welcome. \nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n')
+print(Fore.CYAN+'Welcome.')
+print(Fore.YELLOW+'\nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n'+Fore.RESET)
 helloworld = input("What do you want to encipher? (use . for new line):\n")
 
 # get ready for output
