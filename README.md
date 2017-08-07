@@ -16,6 +16,9 @@
 This script uses the pigpen plaintext font dictionary available here as a convenient json file:
 https://gist.github.com/jamesacampbell/f3612d454268f105faf34aef56499bb2 
 
+And if you are interested there is a pigpen cipher display for an HTML page in my codepen here:
+https://codepen.io/jamesacampbell/full/OjWvoR
+
 for instance ```"a" = "_|" and "b" = "|_|".```
 
 and also available included in this repo as jsondata.json
