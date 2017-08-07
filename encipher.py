@@ -13,14 +13,14 @@ with open('jsondata.json') as f:
 # print(jsondict['a'])
 pypigpen = """
 ------------------------------------
-PYPIGPEN
+PYPIGPEN ENCIPHER / DECIPHER TOOL
 ------------------------------------
                   ,.
                  (_|,.
                 ,' /, )_______   _
              __j o``-'        `.'-)'
             (")                 \\'
-             `-j                |
+             `-j  P I G P E N   |
                `-._(           /
                   |_\  |--^.  /
                  /_]'|_| /_)_/
@@ -30,7 +30,8 @@ PYPIGPEN
 """
 print(pypigpen)
 print(Fore.CYAN+'Welcome.')
-print(Fore.YELLOW+'\nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.\n'+Fore.RESET)
+print(Fore.YELLOW+'\nThis will print a cipher to a text file called cipher.txt. \nUse decipher.py to reverse.'+Fore.RESET)
+print('------------------------------------\n')
 helloworld = input("What do you want to encipher? (use . for new line):\n")
 
 # get ready for output
