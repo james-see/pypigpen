@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jamesacampbell/pypigpen.svg?branch=master)](https://travis-ci.org/jamesacampbell/pypigpen)
 ```
                       ,.
                      (_|,.
