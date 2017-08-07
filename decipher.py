@@ -6,8 +6,11 @@
 import json
 import sys
 
-with open('jsondata.json') as f:
+
+def get_file(filename):
+with open(filename) as f:
     jsondict = json.loads(f.read())
+    return jsondict
 
 # //// tests
 
@@ -30,6 +33,8 @@ print('Welcome. \nThis will print plaintext to a text file called decipher.txt. 
 if len(sys.argv) < 2:
     print('usage: python3 decipher.py [full path and name of text file to decipher]\n')
     exit()
+
+jsondict = get_file('jsondata.json')
 
 with open('decipher.txt','w') as d:
     with open(sys.argv[1],"r") as f:
